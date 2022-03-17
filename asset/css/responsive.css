@@ -1,0 +1,68 @@
+@media screen and (max-width:765px){
+    *{
+        text-align: center;
+    }
+    P{
+        color: black;
+    }
+    .cadre img{
+        width: 100%;
+    }
+    .cadre ul, a{
+        display: none;
+    } 
+    #ball{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+    .map{
+        display: block;
+        background: none;
+    }
+    .col1 , .col2 , .col3{
+    width: 100%;
+    }
+    .line1 img{
+        float:left;
+    }
+    .line, .line1{
+        width: 50%;
+        margin: auto;
+    }
+    .col3 p, .line1 h3{
+        text-align: center;
+    }
+    .awes{
+        display: block;
+    }
+    figure{
+        width: 100%;
+    }
+    figcaption{
+        font-size: larger;
+        margin: 25px 0;
+        font-weight: 700;
+    }
+    .appli{
+        display: block;
+        line-height: 1.5em;
+    }
+    .image, .text{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+    footer{
+        display: block;
+    }
+    footer>div{
+        margin: auto;
+    }
+    footer ul{
+        width: 60%;
+        margin: auto;
+    }
+}
