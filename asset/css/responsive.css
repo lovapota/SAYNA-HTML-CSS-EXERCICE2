@@ -49,6 +49,9 @@
         display: block;
         line-height: 1.5em;
     }
+    .info, .sayna{
+        display: none;
+    }
     .image, .text{
         width: 100%;
     }
@@ -64,5 +67,22 @@
     footer ul{
         width: 60%;
         margin: auto;
+    }
+    .mbola{
+        display: flex;
+        flex-direction: column;
+    }
+    .ndriana{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .manga p{
+        width: 100%;
+        margin: auto;
+    }
+    .ndriana img{
+        width: 100%;
     }
 }

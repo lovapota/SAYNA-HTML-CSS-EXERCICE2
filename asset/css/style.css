@@ -231,6 +231,9 @@ figure{
     width: 40%;
     margin: 0% 2% 0% 0%;
 }
+.mbola{
+    display: none;
+}
 /*footer*/
 footer{
     width: 80%;
