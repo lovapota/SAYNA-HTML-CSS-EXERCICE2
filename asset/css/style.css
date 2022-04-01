@@ -1,35 +1,53 @@
 /*enleve les margin et padding par defaut*/
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Variable de coleur */
+:root{
+    --color1:#3d9f96;
+    --color2:#ababab;
+    --color3:#FFFFFF;
+    --color4:#7e7e7e;
 }
 /*Propriete commun du site*/
 h1{
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 200;
+    font-size: 60px;
     margin: 0 0 2% 0; 
+    font-weight: 200;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 h1 span{
-    font-family: 'Raleway', Arial, sans-serif;
     font-weight: 700;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 h3{
+    font-size: 30px;
     font-family: 'Raleway', Arial, sans-serif; 
 }
 h5{
-    font-family: 'Raleway', Arial, sans-serif;
-    color:#3d9f96 ;
     margin: 2%;
+    font-size: 30px;
+    color: var(--color1);
+    font-family: 'Raleway', Arial, sans-serif;
 }
 p{
+    font-size: 20px;
+    color: var(--color2);
     font-family: Helvetica, Arial, sans-serif, 'Raleway'; 
-    color:#ababab ;
+}
+a{
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif, 'Raleway'; 
 }
 button{
     border: none;
-    margin: 2% 0;
-    padding: 1% 4%;
-    color: #FFFFFF;
-    background-color: #3d9f96;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: var(--color3);
+    background-color: var(--color1);
     border-radius: 10% 10% / 50% 50%;
 }
 ul{
@@ -38,13 +56,22 @@ ul{
 li{
     display: block;
 }
+.ball{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
 /*header*/
 header{
-    font-size: small;
     padding: 1% 0 1% 2%;
+    border-bottom:3px solid var(--color4);
     font-family: Helvetica, Arial, sans-serif;
     background-image: url(../img/header_bg.jpg);
-    border-bottom:3px solid#7e7e7e ;
 }
 header> .cadre{
     width: 70%;
@@ -54,36 +81,31 @@ header> .cadre{
 }
 header ul{
     width: 35%;
-    color:	#FFFFFF;  
+    color:	var(--color3);  
 }
 header ul li{
     width: 50%;
 }
 header .sary{
-    width:30%;
-}
-/*header img{
-    height:100%;
-}*/
-#ball{
-    display: none;
-}
-#mobile{
-    display: block;
+    width:40%;
 }
 header a{
     width:35%;
-    color: #3d9f96;
     text-align: right;
+    color: var(--color1);
+}
+li> a{
+    text-decoration: none;
+    color: var(--color3);
 }
 /*Premiere section*/
 .voalohany {
-    text-align: center;
     padding: 2% 0 0 0;
+    text-align: center;
     background-image: url(../img/seperator1-.jpg);
 }
 .voalohany h1{
-    color: #FFFFFF;
+    color: var(--color3);
 }
 .voalohany p{
     width: 50%;
@@ -97,7 +119,7 @@ header a{
 .ftran{
     padding: 1% 0;
     text-align: center;
-    background-color: aquamarine;
+    background-color: var(--color4);
 }
 .ftran ul{
     width: 60%;
@@ -128,14 +150,20 @@ header a{
     width:40%;
     display: block;
 }
+.col1 .titre{
+    display: flex;
+    align-items: center;
+}
+.col3 .titre{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 .line, .line1{
     width: 80%;
     height: 27%;
     margin: 4% 2% 0 2%;
     text-align: initial;
-}
-.line1 img{
-    float: right;
 }
 .col3 p, .line1 h3{
     text-align: right;
@@ -153,10 +181,9 @@ header a{
     height: 95%;
 }
 .col2 .play{
-    width: 50%;
-    bottom: 50%;
+    width: 100%;
+    top: 45%;
     position: absolute;
-    transform: translateX(-140%);
 }
 /*Troisieme section*/
 .fahatelo{
@@ -170,7 +197,7 @@ header a{
     height: 80px;
     margin: auto;
     border-radius: 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color3);
 }
 .fahatelo p{
     width: 30%;
@@ -186,6 +213,10 @@ figure{
     display: block;
     margin: 2% 2% 2% 0;
 }
+figcaption{
+    margin: 10px 0;
+    font-size: 30px;
+}
 .appli{
     display: flex;
     padding: 2% 0;
@@ -193,61 +224,71 @@ figure{
 }
 .image{
     width: 50%;
+    text-align: center;
     position: relative;
 }
 .logo{
+    width: 100%;
     bottom: 50%;
+    text-align: left;
     position: absolute;
-    transform: translateX(-220%);
+}
+.logo img{
+    width: 40%;
 }
 .text{
+    text-align: center;
     width: 50%;
     margin: 0 2%;
 }
+.text h1{
+    text-align: initial;
+}
+.text p{
+    text-align: justify;
+}
 .text button{
-    padding: 2px 25px;
-    margin: auto;
-}
-/*Information sur sayna*/
-.sayna{
-    display: flex;
-    padding-bottom: 2%;
-    align-items: flex-end;
-}
-.sayna img{
-    width: 38%;
-    height: 100%;
-    margin: 0% 2% 0% 0%;
-}
-.lova{
-    width: 30%;
-    margin: 0% 2% 0 0;
-}
-.info{
-    display: flex;
-    padding-bottom: 2%;
-}
-.info :nth-child(1){
-    width: 40%;
-    margin: 0% 2% 0% 0%;
-}
-.mbola{
-    display: none;
+    padding: 10px 25px;
 }
 /*footer*/
-footer{
+/*Information sur sayna*/
+.footer{
     width: 80%;
-    float: right;
-    margin: 5% 0;
+    margin: auto;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+.mbola{
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr ;
+}
+.sayna{
+    align-self: flex-end;
+}
+.ndriana{
+    line-height: 30px;
+    text-align: justify;
+}
+/*Barre de footer*/
+.barre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 80px 0 20px 0;
+}
+.lova{
+    width: 50%;
 }
 footer ul{
-    width: 20%;
+    width: 50%;
+    margin: auto;
     display: flex;
 }
 footer ul li{
     width: 25%;
-    margin: 0 5%;
-    display: block;
+    margin: 0 20px;
+    display: inline;
 }

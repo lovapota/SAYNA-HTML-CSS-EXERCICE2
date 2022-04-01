@@ -1,31 +1,43 @@
-@media screen and (max-width:765px){
+@media screen and (max-width:768px){
+/*Pour tout la page*/
     *{
         text-align: center;
     }
     P{
         color: black;
     }
+    .ball{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+/*====Header====*/
     .cadre img{
         width: 100%;
     }
     .cadre ul, a{
         display: none;
-    } 
-    #ball{
-        display: block;
     }
-    #mobile{
-        display: none;
-    }
+/*====Deuxieme partie====*/ 
     .map{
-        display: block;
+        width: 100%;
         background: none;
+        flex-direction: column;
     }
     .col1 , .col2 , .col3{
-    width: 100%;
+        width: 100%;
     }
-    .line1 img{
-        float:left;
+    .line{
+        margin: 50px 0;
+    }
+    .col3 .titre{
+        flex-direction: initial;
+        justify-content: center;
+    }
+    .titre{
+        margin: 20px 0;
+        justify-content: center;
     }
     .line, .line1{
         width: 50%;
@@ -34,6 +46,11 @@
     .col3 p, .line1 h3{
         text-align: center;
     }
+/*====Troisieme partie====*/
+.fahatelo p{
+    width: 50%;
+}
+/*====Quatrieme partie====*/
     .awes{
         display: block;
     }
@@ -41,7 +58,7 @@
         width: 100%;
     }
     figcaption{
-        font-size: larger;
+        font-size: 50px;
         margin: 25px 0;
         font-weight: 700;
     }
@@ -49,40 +66,43 @@
         display: block;
         line-height: 1.5em;
     }
-    .info, .sayna{
-        display: none;
-    }
     .image, .text{
         width: 100%;
     }
     .image img{
         width: 100%;
     }
-    footer{
+    .aiza{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /*====Footer====*/
+    .footer{
         display: block;
     }
-    footer>div{
+    .footer>div{
         margin: auto;
     }
-    footer ul{
+    .footer ul{
         width: 60%;
         margin: auto;
     }
     .mbola{
-        display: flex;
-        flex-direction: column;
-    }
-    .ndriana{
-        display: flex;
-        text-align: center;
         align-items: center;
+        grid-template-columns: 1fr;
+    }
+    .salut, .a{
+        order: 1;
+    }
+    .manahoana, .itemp {
+        order: 2;
+    }
+    .barre{
+        padding-top: 70px;
         flex-direction: column;
     }
-    .manga p{
+    .barre .lova{
         width: 100%;
-        margin: auto;
-    }
-    .ndriana img{
-        width: 100%;
+        margin: 15px 0;
     }
 }
