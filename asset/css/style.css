@@ -130,6 +130,9 @@ li> a{
     width: 20%;
     margin: 0 1%;
 }
+.ouf img{
+    width: 80%;
+}
 /*deuxieme section*/
 .faharoa{
     padding: 2% 0%;
@@ -176,14 +179,19 @@ li> a{
     width: 20%;
     position: relative;
 }
+.col2 img{
+    width: 100%;
+}
 .col2 .fond{
     width: 90%;
-    height: 95%;
 }
 .col2 .play{
     width: 100%;
     top: 45%;
     position: absolute;
+}
+.col2 .play img{
+    width: 80%;
 }
 /*Troisieme section*/
 .fahatelo{
