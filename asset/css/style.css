@@ -182,8 +182,8 @@ li> a{
 .col2 img{
     width: 100%;
 }
-.col2 .fond{
-    width: 90%;
+.col2>img{
+    height: 100%;
 }
 .col2 .play{
     width: 100%;
